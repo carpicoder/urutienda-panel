@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar un producto - Panel de administración</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a class="logo-link" href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="Logo del panel">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="profile-icon" id="open-profile">
+                <i class="bi bi-person-circle"></i>
+            </button>
+        </div>
+        <div class="header-panel" id="header-panel">
+            <button id="close-profile"><i class="bi bi-x-lg"></i></button>
+            <div class="profile">
+                <button class="profile-icon">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <div class="profile-details">
+                    <p class="profile-user"><b>invitado</b></p>
+                    <p class="profile-mail">invitado@urutienda.com</p>
+                    <a class="profile-button" href="login.html">Cerrar sesión</a>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <a href="#"><i class="bi bi-eye"></i> Ver mi Urutienda</a>
+                <a href="#"><i class="bi bi-person-fill"></i> Mi perfil</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="section">
+            <div class="section-header">
+                <h1 class="section-title">Agregar nuevo producto</h1>
+            </div>
+        </div>
+
+        <div class="section-body">
+
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="text" class="w-100 mw-100 d-block shadow-sm" placeholder="Título del producto">
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <div class="d-flex align-items-center gap-3">
+                            <h6 class="fw-bolder">Datos del producto</h6>
+                            <select class="border">
+                                <option>Producto simple</option>
+                                <option>Producto variable</option>
+                            </select>
+                            <div>
+                                <label for="virtual">Virtual:</label> <input type="checkbox" id="virtual">
+                            </div>
+                            <div>
+                                <label for="descargable">Descargable:</label> <input type="checkbox" id="descargable">
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-2">
+                                <ul class="nav nav-tabs flex-column border-end border-bottom-0 mb-2" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true"><i class="bi bi-wrench"></i> General</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="inventario-tab" data-bs-toggle="tab" data-bs-target="#inventario" type="button" role="tab" aria-controls="inventario" aria-selected="false"><i class="bi bi-clipboard-check"></i> Inventario</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="envio-tab" data-bs-toggle="tab" data-bs-target="#envio" type="button" role="tab" aria-controls="envio" aria-selected="false"><i class="bi bi-truck"></i> Envío</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="atributos-tab" data-bs-toggle="tab" data-bs-target="#atributos" type="button" role="tab" aria-controls="atributos" aria-selected="false"><i class="bi bi-card-checklist"></i> Atributos</button>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general" tabindex="0">
+                                        <div class="row align-items-center gap-2 mb-2">
+                                            <label class="col-md-2" for="precio-normal">Precio normal:</label>
+                                            <input type="text" class="col-md-3 border" id="precio-normal">
+                                        </div>
+                                        <div class="row align-items-center gap-2">
+                                            <label class="col-md-2" for="precio-rebajado">Precio rebajado:</label>
+                                            <input type="text" class="border col-md-3" id="precio-rebajado">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="inventario" role="tabpanel" aria-labelledby="inventario" tabindex="0">
+                                        <div class="row align-items-center gap-2 mb-2">
+                                            <label class="col-md-2" for="sku">SKU:</label>
+                                            <input type="text" class="col-md-3 border" id="sku">
+                                        </div>
+                                        <div class="row align-items-center gap-2 mb-2">
+                                            <label class="col-md-2" for="estado-inventario">Estado del stock:</label>
+                                            <select class="border col-md-3" id="estado-inventario">
+                                                <option value="">Hay stock</option>
+                                                <option value="">Agotado</option>
+                                                <option value="">Permitir reservas</option>
+                                            </select>
+                                        </div>
+                                        <div class="row align-items-center gap-2">
+                                            <label class="col-md-2" for="stock">Cantidad en stock:</label>
+                                            <input type="text" class="col-md-3 border" id="stock">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="envio" role="tabpanel" aria-labelledby="envio" tabindex="0">
+                                        <div class="row align-items-center gap-2 mb-2">
+                                            <label class="col-md-2" for="peso">Peso (kg):</label>
+                                            <input type="text" class="col-md-3 border" id="peso">
+                                        </div>
+                                        <div class="row align-items-center gap-2 mb-2">
+                                            <label class="col-md-2" for="largo">Largo (cm):</label>
+                                            <input type="text" class="col-md-3 border" id="largo">
+                                        </div>
+                                        <div class="row align-items-center gap-2 mb-2">
+                                            <label class="col-md-2" for="ancho">Ancho (cm):</label>
+                                            <input type="text" class="col-md-3 border" id="ancho">
+                                        </div>
+                                        <div class="row align-items-center gap-2 mb-2">
+                                            <label class="col-md-2" for="alto">Alto (cm):</label>
+                                            <input type="text" class="col-md-3 border" id="alto">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="atributos" role="tabpanel" aria-labelledby="atributos" tabindex="0">
+                                        Atributos
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h6 class="fw-bolder mb-3">Descripción del producto</h6>
+                        <textarea class="w-100 border rounded p-2" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="section-panel p-3 bg-white rounded  shadow-sm">
+                        <h6 class="fw-bolder mb-3">Publicar</h6>
+                        <a href="#" class="button-yellow mb-2">Guardar borrador</a>
+                        <a href="#" class="button-yellow fw-bolder fs-6">Publicar producto</a>
+                    </div>
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h6 class="fw-bolder mb-3">Foto principal</h6>
+                        <a href="#" class="button-yellow mb-2 d-flex align-items-center gap-2">
+                            <i class="bi bi-cloud-arrow-up-fill"></i> Subir foto principal
+                        </a>
+                    </div>
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h6 class="fw-bolder mb-3">Galería del producto</h6>
+                        <a href="#" class="button-yellow mb-2 d-flex align-items-center gap-2">
+                            <i class="bi bi-cloud-plus-fill"></i> Subir más fotos
+                        </a>
+                    </div>
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h6 class="fw-bolder mb-3">Categorías del producto</h6>
+                        <div class="d-flex gap-2">
+                            <input type="checkbox" id="cat-1">
+                            <label for="cat-1">Categoría 1</label>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <input type="checkbox" id="cat-2">
+                            <label for="cat-2">Categoría 2</label>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <input type="checkbox" id="cat-3">
+                            <label for="cat-3">Categoría 3</label>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <input type="checkbox" id="cat-4">
+                            <label for="cat-4">Categoría 4</label>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <input type="checkbox" id="cat-5">
+                            <label for="cat-5">Categoría 5</label>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <input type="checkbox" id="cat-general">
+                            <label for="cat-general">General</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="./js/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

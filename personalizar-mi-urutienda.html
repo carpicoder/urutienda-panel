@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar mi Urutienda - Panel de administración</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a class="logo-link" href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="Logo del panel">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="profile-icon" id="open-profile">
+                <i class="bi bi-person-circle"></i>
+            </button>
+        </div>
+        <div class="header-panel" id="header-panel">
+            <button id="close-profile"><i class="bi bi-x-lg"></i></button>
+            <div class="profile">
+                <button class="profile-icon">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <div class="profile-details">
+                    <p class="profile-user"><b>invitado</b></p>
+                    <p class="profile-mail">invitado@urutienda.com</p>
+                    <a class="profile-button" href="login.html">Cerrar sesión</a>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <a href="#"><i class="bi bi-eye"></i> Ver mi Urutienda</a>
+                <a href="#"><i class="bi bi-person-fill"></i> Mi perfil</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="section">
+            <div class="section-header m-0">
+                <h1 class="section-title">Personalizar mi Urutienda</h1>
+            </div>
+        </div>
+
+        <div class="section-body">
+
+            <div class="row">
+                <div class="col-md-10">
+
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h5 class="fw-bolder mb-3">Encabezado</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">Logo de tu sitio</h6>
+                                <div class="d-flex gap-5 align-items-center mt-2">
+                                    <small>No hay ninguna imagen seleccionada.</small>
+                                    <a href="#" class="button-yellow" style="min-width: max-content">Agregar imagen</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">Nombre de tu sitio</h6>
+                                <div class="d-flex gap-5 align-items-center mt-2">
+                                    <input type="text" class="border mw-100 w-100" value="Urutienda">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">Barrita superior</h6>
+                                <div class="d-flex gap-5 align-items-center mt-2">
+                                    <input type="text" class="border mw-100 w-100" value="Hasta 12 cuota sin interés!">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h5 class="fw-bolder mb-3">Opciones globales</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Color principal de tu Urutienda</h6>
+                                <small>Elegí el color principal de los detalles de tu Urutienda. 🤩</small>
+                                <div class="d-flex gap-5 align-items-center mt-2">
+                                    <a href="#" class="button-yellow">Seleccionar un color</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Color de texto sobre color principal</h6>
+                                <small>Si tu color principal es muy claro, elegí negro. Si tu color principal es muy oscuro, elegí blanco.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <select class="border mw-100 w-100">
+                                        <option value="">Negro</option>
+                                        <option value="">Blanco</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Modo de color</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Modo claro</button>
+                                        <button type="button" class="btn btn-outline-dark">Modo oscuro</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Modo de diseño</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Plano</button>
+                                        <button type="button" class="btn btn-outline-dark">3D</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Tipo de letra</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <select class="border mw-100 w-100">
+                                        <option value="">Poppins (recomendada)</option>
+                                        <option value="">Alkalami</option>
+                                        <option value="">Comfortaa</option>
+                                        <option value="">Kanit</option>
+                                        <option value="">Open Sans</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Tipo de carrito</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-dark">Carrito WhatsApp</button>
+                                        <button type="button" class="btn btn-warning">Carrito tradicional</button>
+                                        <button type="button" class="btn btn-outline-dark">Modo catálogo</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h5 class="fw-bolder mb-3">Página de Inicio</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Carrusel de imágenes principal</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Mostrar</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bolder mb-1">Ancho del carrusel</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Pantalla completa</button>
+                                        <button type="button" class="btn btn-outline-dark">Encajado y con márgenes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-3">
+                                <h6 class="fw-bolder mb-1">Bloque de categorías principales</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Mostrar</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <h6 class="fw-bolder mb-1">Bloque de productos destacados</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Mostrar</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <h6 class="fw-bolder mb-1">Bloque de productos en oferta</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Mostrar</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <h6 class="fw-bolder mb-1">Bloque de productos recientes</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Mostrar</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <h6 class="fw-bolder mb-1">Bloque de información</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Mostrar</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h5 class="fw-bolder mb-3">Pie de página</h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="fw-bolder mb-1">Empresas de envíos</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Activado</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar todas</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 mt-2">
+                                    <div>
+                                        <input type="checkbox" checked> DAC
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Grupo Agencia
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Turil
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Correo Uruguayo
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Ues
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"> Uber
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"> Mirtrans
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"> Núñez
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h6 class="fw-bolder mb-1">Empresas de pagos</h6>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Activado</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar todas</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 mt-2">
+                                    <div>
+                                        <input type="checkbox" checked> MercadoPago
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Visa
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> MasterCard
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> OCA
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Diners Club
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Líder
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Creditel
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Abitab
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Ebrou
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Redpagos
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"> Midinero
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" checked> Prex
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h6 class="fw-bolder mb-1">Botón de acceso al panel</h6>
+                                <small>Si lo ocultás, recordá que tu link de acceso al panel es tu-dominio/wp-admin. Por ejemplo: <i>www.urutienda.com/wp-admin</i>.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-warning">Mostrar</button>
+                                        <button type="button" class="btn btn-outline-dark">Ocultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h5 class="fw-bolder mb-3">Redes sociales</h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="fw-bolder mb-1">WhatsApp</h6>
+                                <small>Ingresá tu número de WhatsApp completo y sin espacios, incluyendo el código de país. Por ejemplo: 59896777444.</small><br>
+                                <small>Este número también es el que usaremos si activás la opción de "Carrito WhatsApp".</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <input type="text" class="border w-100 mw-100" value="5491126799596">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">Facebook</h6>
+                                <small>Ingresá el enlace a tu perfil o página de Facebook completo. Por ejemplo: <i>https://facebook.com/urutienda.ok</i>.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <input type="text" class="border w-100 mw-100" value="https://facebook.com/urutienda.ok">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">Instagram</h6>
+                                <small>Ingresá tu usuario de Instagram, sin arroba. Por ejemplo: <i>uru.tienda</i>.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <input type="text" class="border w-100 mw-100" value="uru.tienda">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">TikTok</h6>
+                                <small>Ingresá tu usuario de TikTok, sin arroba. Por ejemplo, <i>urutienda</i>.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <input type="text" class="border w-100 mw-100" value="urutienda">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">Telegram</h6>
+                                <small>Ingresá tu enlace de Telegram completo. Por ejemplo, <i>https://t.me/urutienda</i>.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <input type="text" class="border w-100 mw-100" value="https://t.me/urutienda">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">Teléfono</h6>
+                                <small>Ingresá tu número de teléfono. Por ejemplo: <i>59896777444</i>.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <input type="text" class="border w-100 mw-100" value="59896777444">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bolder mb-1">E-mail</h6>
+                                <small>Ingresá tu correo electronico. Por ejemplo: <i>soporte@urutienda.com</i>.</small>
+                                <div class="d-flex gap-5 align-items-center">
+                                    <input type="text" class="border w-100 mw-100" value="soporte@urutienda.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="section-panel mt-4 p-3 bg-white rounded  shadow-sm">
+                        <h5 class="fw-bolder mb-3">Integraciones</h5>
+                        <div class="row">
+                            <div class="col-md-4 d-flex flex-column">
+                                <h6 class="fw-bolder mb-1">Facebook Pixel</h6>
+                                <small>Si tenés un código de Facebook Pixel, insertalo en este campo.</small>
+                                <div class="d-flex flex-column gap-5 align-items-center flex-grow-1">
+                                    <textarea class="border w-100 mw-100 h-100" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex flex-column">
+                                <h6 class="fw-bolder mb-1">Google Analytics</h6>
+                                <small>Si tenés un código de Google Analytics, insertalo en este campo.</small>
+                                <div class="d-flex gap-5 align-items-center flex-grow-1">
+                                    <textarea class="border w-100 mw-100 h-100" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex flex-column">
+                                <h6 class="fw-bolder mb-1">Google Analytics</h6>
+                                <small>Si tenés un código de alguna otra plataforma que necesitás insertar entre tus etiquetas &lt;HEAD&gt;, insertalas en este campo.</small>
+                                <div class="d-flex gap-5 align-items-center flex-grow-1">
+                                    <textarea class="border w-100 mw-100 h-100" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 p-4">
+                    <a href="#" class="button-yellow sticky-top" style="top: 1rem">Guardar cambios</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="./js/profile.js"></script>
+</body>
+</html>

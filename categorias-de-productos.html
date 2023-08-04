@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías de productos - Panel de administración</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a class="logo-link" href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="Logo del panel">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="profile-icon" id="open-profile">
+                <i class="bi bi-person-circle"></i>
+            </button>
+        </div>
+        <div class="header-panel" id="header-panel">
+            <button id="close-profile"><i class="bi bi-x-lg"></i></button>
+            <div class="profile">
+                <button class="profile-icon">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <div class="profile-details">
+                    <p class="profile-user"><b>invitado</b></p>
+                    <p class="profile-mail">invitado@urutienda.com</p>
+                    <a class="profile-button" href="login.html">Cerrar sesión</a>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <a href="#"><i class="bi bi-eye"></i> Ver mi Urutienda</a>
+                <a href="#"><i class="bi bi-person-fill"></i> Mi perfil</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="section">
+            <div class="section-header">
+                <h1 class="section-title">Categorías de productos</h1>
+            </div>
+        </div>
+
+        <div class="section-body">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="section-filters">
+                        <div>
+                            <input type="text" placeholder="Buscar">
+                            <a href="#" class="button-yellow">Buscar categorías</a>
+                        </div>
+                    </div>
+                    <p class="small mt-3">Las categorías de producto de tu tienda se pueden gestionar desde aquí. Para cambiar el orden de las categorías en la tienda puedes arrastrarlas y soltarlas aquí. Para ver aquí más categorías haz clic en el enlace de «opciones de pantalla» de la parte superior de esta página.</p>
+                    <h5 class="fw-bolder my-3">Agregar nueva categoría</h5>
+                    <input type="text" class="mw-100 d-block w-100" placeholder="Nombre de la categoría">
+                    <a href="#" class="button-yellow mt-2">Agregar categoría</a>
+                </div>
+                <div class="col-md-8">
+                    <div class="section-table">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Slug</th>
+                                <th scope="col">Cantidad de productos</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Categoría 1</td>
+                                <td>categoria-1</td>
+                                <td>3</td>
+                              </tr>
+                              <tr>
+                                <td>Categoría 2</td>
+                                <td>categoria-2</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Categoría 3</td>
+                                <td>categoria-3</td>
+                                <td>2</td>
+                              </tr>
+                              <tr>
+                                <td>Categoría 4</td>
+                                <td>categoria-4</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Categoría 5</td>
+                                <td>categoria-5</td>
+                                <td>1</td>
+                              </tr>
+                              <tr>
+                                <td>General</td>
+                                <td>general</td>
+                                <td>1</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Slug</th>
+                                <th scope="col">Cantidad de productos</th>
+                              </tr>
+                            </tfoot>
+                          </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="./js/profile.js"></script>
+</body>
+</html>

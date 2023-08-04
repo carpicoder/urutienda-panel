@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupones de descuento - Panel de administración</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a class="logo-link" href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="Logo del panel">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="profile-icon" id="open-profile">
+                <i class="bi bi-person-circle"></i>
+            </button>
+        </div>
+        <div class="header-panel" id="header-panel">
+            <button id="close-profile"><i class="bi bi-x-lg"></i></button>
+            <div class="profile">
+                <button class="profile-icon">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <div class="profile-details">
+                    <p class="profile-user"><b>invitado</b></p>
+                    <p class="profile-mail">invitado@urutienda.com</p>
+                    <a class="profile-button" href="login.html">Cerrar sesión</a>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <a href="#"><i class="bi bi-eye"></i> Ver mi Urutienda</a>
+                <a href="#"><i class="bi bi-person-fill"></i> Mi perfil</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="section">
+            <div class="section-header">
+                <h1 class="section-title">Cupones de descuento</h1>
+                <div class="section-buttons">
+                    <a class="section-button" href="#">Agregar cupón</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-body">
+
+            <div class="section-filters">
+                <div>
+                    <select>
+                        <option selected>Editar</option>
+                        <option>Eliminar</option>
+                    </select>
+                    <a href="#" class="button-yellow">Aplicar</a>
+                </div>
+                <div>
+                    <input type="text" placeholder="Buscar">
+                    <a href="#" class="button-yellow">Buscar cupones</a>
+                </div>
+            </div>
+
+            <div class="section-table">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Tipo de cupón</th>
+                        <th scope="col">Importe del cupón</th>
+                        <th scope="col">Uso / Límite</th>
+                        <th scope="col">Fecha de expiración</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">DESCUENTOCARRITO</th>
+                        <td>Descuento en el carrito</td>
+                        <td>$600</td>
+                        <td>1 vez por usuario</td>
+                        <td>06/08/2025</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">PROMONAVIDAD</th>
+                        <td>Descuento en productos seleccionados</td>
+                        <td>15%</td>
+                        <td>Sin límite</td>
+                        <td>31/12/2024</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Tipo de cupón</th>
+                        <th scope="col">Importe del cupón</th>
+                        <th scope="col">Uso / Límite</th>
+                        <th scope="col">Fecha de expiración</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="./js/profile.js"></script>
+</body>
+</html>

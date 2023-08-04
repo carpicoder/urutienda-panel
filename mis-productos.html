@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis productos - Panel de administración</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a class="logo-link" href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="Logo del panel">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="profile-icon" id="open-profile">
+                <i class="bi bi-person-circle"></i>
+            </button>
+        </div>
+        <div class="header-panel" id="header-panel">
+            <button id="close-profile"><i class="bi bi-x-lg"></i></button>
+            <div class="profile">
+                <button class="profile-icon">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <div class="profile-details">
+                    <p class="profile-user"><b>invitado</b></p>
+                    <p class="profile-mail">invitado@urutienda.com</p>
+                    <a class="profile-button" href="login.html">Cerrar sesión</a>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <a href="#"><i class="bi bi-eye"></i> Ver mi Urutienda</a>
+                <a href="#"><i class="bi bi-person-fill"></i> Mi perfil</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="section">
+            <div class="section-header">
+                <h1 class="section-title">Mis productos</h1>
+                <div class="section-buttons gap-2 flex-wrap">
+                    <a class="section-button" href="./agregar-un-producto.html">Agregar nuevo</a>
+                    <a class="section-button" href="#">Importar</a>
+                    <a class="section-button" href="#">Exportar</a>
+                    <a class="section-button-alt btn btn-outline-primary" href="#">
+                        Todos
+                        <span class="badge bg-primary">9</span>
+                    </a>
+                    <a class="section-button-alt btn btn-primary" href="#">
+                        Publicados
+                        <span class="badge bg-primary">7</span>
+                    </a>
+                    <a class="section-button-alt btn btn-outline-danger" href="#">
+                        En papelera
+                        <span class="badge bg-danger">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-body">
+
+            <div class="section-filters">
+                <div>
+                    <select>
+                        <option selected>Editar</option>
+                        <option>Eliminar</option>
+                        <option>Actualizar stock</option>
+                    </select>
+                    <a href="#" class="button-yellow">Aplicar</a>
+                    <select>
+                        <option selected>Filtrar por categoría</option>
+                        <option>Categoría 1</option>
+                        <option>Categoría 2</option>
+                        <option>Categoría 3</option>
+                        <option>Categoría 4</option>
+                        <option>Categoría 5</option>
+                        <option>General</option>
+                    </select>
+                    <select>
+                        <option selected>Filtrar por stock</option>
+                        <option>En stock</option>
+                        <option>Agotados</option>
+                    </select>
+                    <a href="#" class="button-yellow">Filtrar</a>
+                </div>
+                <div>
+                    <input type="text" placeholder="Buscar">
+                    <a href="#" class="button-yellow">Buscar productos</a>
+                </div>
+            </div>
+
+            <div class="section-table">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"><i class="bi bi-file-earmark-image"></i></th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Inventario</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Fecha de publicación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td><img src="./img/default.png" style="max-width: 2rem;" alt=""></td>
+                        <td class="fw-bolder">Producto de ejemplo 7</td>
+                        <td class="text-success">Hay stock</td>
+                        <td>$1.000</td>
+                        <td>Categoría 1</td>
+                        <td>16 Mar, 2023</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td><img src="./img/default.png" style="max-width: 2rem;" alt=""></td>
+                        <td class="fw-bolder">Producto de ejemplo 6</td>
+                        <td class="text-danger">Agotado</td>
+                        <td>$1.000</td>
+                        <td>Categoría 5</td>
+                        <td>16 Mar, 2023</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td><img src="./img/default.png" style="max-width: 2rem;" alt=""></td>
+                        <td class="fw-bolder">Producto de ejemplo 5</td>
+                        <td class="text-danger">Agotado</td>
+                        <td>$1.500</td>
+                        <td>Categoría 3</td>
+                        <td>16 Mar, 2023</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td><img src="./img/default.png" style="max-width: 2rem;" alt=""></td>
+                        <td class="fw-bolder">Producto de ejemplo 4</td>
+                        <td class="text-success">Hay stock</td>
+                        <td>$1.000</td>
+                        <td>Categoría 1</td>
+                        <td>16 Mar, 2023</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><img src="./img/default.png" style="max-width: 2rem;" alt=""></td>
+                        <td class="fw-bolder">Producto de ejemplo 3</td>
+                        <td class="text-danger">Agotado</td>
+                        <td>$1.000</td>
+                        <td>General</td>
+                        <td>16 Mar, 2023</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><img src="./img/default.png" style="max-width: 2rem;" alt=""></td>
+                        <td class="fw-bolder">Producto de ejemplo 2</td>
+                        <td class="text-success">Hay stock</td>
+                        <td>$2.000</td>
+                        <td>Categoría 3</td>
+                        <td>16 Mar, 2023</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><img src="./img/default.png" style="max-width: 2rem;" alt=""></td>
+                        <td class="fw-bolder">Producto de ejemplo</td>
+                        <td class="text-success">Hay stock</td>
+                        <td>$1.000</td>
+                        <td>Categoría 1</td>
+                        <td>16 Mar, 2023</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"><i class="bi bi-file-earmark-image"></i></th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Inventario</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Fecha de publicación</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="./js/profile.js"></script>
+</body>
+</html>

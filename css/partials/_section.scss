@@ -1,0 +1,132 @@
+.section {
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+
+    .section-buttons {
+        display: flex;
+
+        .section-button {
+            background-color: var(--clr-main);
+            padding: .5rem 1rem;
+            border-radius: .5rem;
+            font-size: .85rem;
+            font-weight: 600;
+        }
+
+        .section-button-alt {
+            padding: .5rem 1rem;
+            border-radius: .5rem;
+            font-size: .85rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.section-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    > div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        row-gap: .25rem;
+        flex-wrap: wrap;
+    }
+
+}
+
+select,
+input {
+    border: 0;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    max-width: 12rem;
+    background-color: var(--clr-white);
+}
+
+.section-table {
+    margin-top: 2rem;
+
+    table {
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: var(--box-shadow-expand);
+        font-size: .85rem;
+
+        tr {
+
+            td {
+                vertical-align: middle;
+            }
+
+            td:first-of-type {
+                font-weight: 800;
+                cursor: pointer;
+            }
+        }
+
+
+        .status {
+            width: max-content;
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+
+            &.en-espera {
+                background-color: #f8dda7;
+                color: #94660c;
+            }
+
+            &.completado {
+                background-color: #a7f8bb;
+                color: #0c9440;
+            }
+
+            &.procesando {
+                background-color: #a7e8f8;
+                color: #0c5494;
+            }
+        }
+    }
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: var(--clr-main);
+    border: 0;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: 0;
+    width: 100%;
+
+    display: flex;
+    color: var(--clr-dark);
+    gap: .5rem;
+    align-items: center;
+
+    i {
+        font-size: .8em;
+    }
+}
+
+.btn-warning {
+    background-color: var(--clr-main);
+    border-color: var(--clr-main);
+}

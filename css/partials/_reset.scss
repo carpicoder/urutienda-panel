@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-main: #fee801;
+    --clr-dark: #27292b;
+    --clr-light: #f5f5f5;
+    --clr-white: #fff;
+    --clr-blue: #1e73be;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    --box-shadow-expand: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    transition: 
+        background-color .3s,
+        color .3s;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+}
+
+a {
+    color: var(--clr-dark);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button-yellow {
+    background-color: var(--clr-main);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
