@@ -224,6 +224,10 @@ main {
   padding: 2rem;
 }
 
+main {
+  padding-bottom: 6rem;
+}
+
 .main-grid {
   display: flex;
   flex-direction: column;
@@ -415,4 +419,60 @@ input {
 .btn-warning {
   background-color: var(--clr-main);
   border-color: var(--clr-main);
+}
+
+.barrita-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-light);
+  box-shadow: var(--box-shadow);
+  z-index: 99999;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+}
+.barrita-inferior .item {
+  position: relative;
+}
+.barrita-inferior .item .boton {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.barrita-inferior .item .menu {
+  position: absolute;
+  bottom: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--clr-light);
+  padding: 1rem 1.5rem;
+  box-shadow: 0px -5px 15px -5px rgb(172, 172, 172);
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: none;
+  font-size: 1rem;
+  flex-direction: column;
+  align-items: start;
+}
+.barrita-inferior .item .menu a:hover {
+  color: var(--clr-blue);
+}
+.barrita-inferior .item .boton:hover > .menu {
+  display: flex;
+}
+.barrita-inferior .item:first-child .boton .menu {
+  transform: translateX(0);
+  left: calc(100% - 2rem);
+}
+.barrita-inferior .item:last-child .boton .menu {
+  transform: translateX(0);
+  right: calc(100% - 2rem);
+  left: unset;
 }/*# sourceMappingURL=main.css.map */

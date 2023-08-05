@@ -3,102 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Panel de administración</title>
+    <title>Iniciar sesión - Panel de administración</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body class="login-body">
 
-    <header>
-        <div class="header-left">
-            <a class="logo-link" href="./index.html">
-                <img class="logo" src="./img/logo.png" alt="Logo del panel">
-            </a>
-        </div>
-        <div class="header-right">
-            <button class="profile-icon" id="open-profile">
-                <i class="bi bi-person-circle"></i>
-            </button>
-        </div>
-        <div class="header-panel" id="header-panel">
-            <button id="close-profile"><i class="bi bi-x-lg"></i></button>
-            <div class="profile">
-                <button class="profile-icon">
-                    <i class="bi bi-person-circle"></i>
-                </button>
-                <div class="profile-details">
-                    <p class="profile-user"><b>invitado</b></p>
-                    <p class="profile-mail">invitado@urutienda.com</p>
-                    <a class="profile-button" href="login.html">Cerrar sesión</a>
+    <div class="login-content">
+        <img src="./img/logo.png">
+        <form class="login-form">
+            <div class="form-group">
+                <label for="user">Nombre de usuario</label>
+                <input class="mw-100 w-100" id="user" type="text" value="invitado" placeholder="Nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="pass">Contraseña</label>
+                <input class="mw-100 w-100" id="pass" type="text" value="invitado" placeholder="Contraseña">
+            </div>
+            <div class="form-footer">
+                <div class="checkbox">
+                    <input type="checkbox" name="recordarme" id="recordarme">
+                    <label for="recordarme">Recordarme</label>
                 </div>
+                <a href="./inicio.html">Iniciar sesión</a>
             </div>
-            <div class="panel-footer">
-                <a href="#"><i class="bi bi-eye"></i> Ver mi Urutienda</a>
-                <a href="#"><i class="bi bi-person-fill"></i> Mi perfil</a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="main-grid">
-            <a href="mis-pedidos.html" class="grid-item">
-                <i class="bi bi-inboxes"></i>
-                <p>Mis pedidos</p>
-            </a>
-            <a href="agregar-un-producto.html" class="grid-item">
-                <i class="bi bi-cloud-upload"></i>
-                <p>Agregar un producto</p>
-            </a>
-            <a href="mis-productos.html" class="grid-item">
-                <i class="bi bi-archive"></i>
-                <p>Mis productos</p>
-            </a>
-            <a href="categorias-de-productos.html" class="grid-item">
-                <i class="bi bi-ui-checks"></i>
-                <p>Categorías de productos</p>
-            </a>
-            <a href="cupones-de-descuento.html" class="grid-item">
-                <i class="bi bi-ticket-perforated"></i>
-                <p>Cupones de descuento</p>
-            </a>
-            <a href="metodos-de-pago.html" class="grid-item">
-                <i class="bi bi-credit-card-2-back"></i>
-                <p>Métodos de pago</p>
-            </a>
-            <a href="metodos-de-envio.html" class="grid-item">
-                <i class="bi bi-truck"></i>
-                <p>Métodos de envío</p>
-            </a>
-            <a href="direccion-moneda-y-atributos.html" class="grid-item">
-                <i class="bi bi-gear"></i>
-                <p>Dirección, moneda y atributos</p>
-            </a>
-            <a href="carrusel-de-imagenes.html" class="grid-item">
-                <i class="bi bi-images"></i>
-                <p>Carrusel de imágenes</p>
-            </a>
-            <a href="personalizar-mi-urutienda.html" class="grid-item">
-                <i class="bi bi-palette"></i>
-                <p>Personalizar mi Urutienda</p>
-            </a>
-            <a href="https://urutienda.com/demo1" target="_blank" class="grid-item">
-                <i class="bi bi-emoji-heart-eyes"></i>
-                <p>Ver mi Urutienda</p>
-            </a>
-            <a href="empleados.html" class="grid-item">
-                <i class="bi bi-people"></i>
-                <p>Empleados</p>
-            </a>
-            <a href="https://urutienda.com/tutoriales" target="_blank" class="grid-item bg-yellow">
-                <i class="bi bi-info-circle"></i>
-                <p>Tutoriales</p>
-            </a>
-            <a href="https://urutienda.com/whatsapp-soporte" target="_blank" class="grid-item bg-yellow">
-                <i class="bi bi-life-preserver"></i>
-                <p>Comunicarme con Urutienda</p>
-            </a>
-        </div>
-    </main>
+        </form>
+        <p class="forgot-password">¿Olvidaste tu contraseña?</p>
+    </div>
     
-    <script src="./js/profile.js"></script>
 </body>
 </html>
